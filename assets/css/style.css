@@ -834,42 +834,67 @@ main {
 }
 
 
-/**
- * skills 
- */
-
-.skills-title { margin-bottom: 20px; }
-
-.skills-list { padding: 20px; }
-
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+/* Skills Section */
+/* Skills Section */
+.skills {
+  padding: 60px 20px;
 }
 
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  text-align: center;
+  font-weight: 700;
+  color: #FED16A;
+  letter-spacing: 0.5px;
 }
 
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
+/* Responsive Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
+.skill-text{
+  color: white;
+  text-align: center;
+  align-self: center;
 }
+
+@media (max-width: 748px) {
+  .skill-text{  
+    margin-top: 1rem;
+  }
+  
+}
+
+/* Skill Card Style */
+/* .skill-card {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 35px 20px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+} */
+
+/* Hover Effect */
+/* .skill-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #ddd;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: #fafafa;
+} */
 
 
 
