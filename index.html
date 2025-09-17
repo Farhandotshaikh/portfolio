@@ -1120,17 +1120,20 @@
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
-            <label for="Services" class="Dropdown-title">Choose The Service:</label>
-
-            <select name="Services" class="input-wrapper form-input dropdown" >
-              <option value="React Development">React Development</option>
-              <option value="Shopify Development">Shopify Development</option>
-              <option value="Wordpress Development">Wordpress Development</option>
-              <option value="Static Website Development">Static Website Development</option>
-            </select>
             
-            <input type="tel" name="phone" maxlength=10 pattern="[0-9]{2}-[0-9]{5} [0-9]{5}" class="form-input input-wrapper" placeholder="Phone Number ex: +91 12345 12345" optional data-form-input>
+            <div class="input-wrapper">
+
+              <select name="Services" class="form-input" placeholder="Select Services" required data-form-input>
+                <option value="Choose" style="font-weight: var(--fw-500); color: grey;">-- Choose a Service --</option>
+                <option value="React Development">React Development</option>
+                <option value="Shopify Development">Shopify Development</option>
+                <option value="Wordpress Development">Wordpress Development</option>
+                <option value="Static Website Development">Static Website Development</option>
+              </select>
+              
+              <input type="tel" name="phone" maxlength=15  class="form-input" placeholder="Enter Phone Number with country code" optional data-form-input>
+            </div>
+            
             
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
