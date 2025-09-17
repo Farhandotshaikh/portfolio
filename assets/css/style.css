@@ -1189,7 +1189,16 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  background-color: black;
 }
+
+.Dropdown-title{  
+  color: var(--white-2);
+  padding-bottom: 5px;
+  
+}
+
+
 
 .form-input::placeholder { font-weight: var(--fw-500); }
 
