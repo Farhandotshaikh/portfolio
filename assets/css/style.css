@@ -1521,8 +1521,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .clients-item { min-width: calc(33.33% - 35px); }
 
   .clients-item {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     flex: 0 0 auto; /* keeps size fixed in scrollbar layout */
   }
 
